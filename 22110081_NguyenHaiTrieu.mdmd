@@ -1,15 +1,19 @@
-# Lab #1,20110357, Dinh Tan Dung, INSE331280E_02FIE
-# Task 1: Encrypt and Decrypt Text file
+# Lab #1,22110081, Nguyen Hai Trieu, INSE331280E_03FIE
+# Task 1: Software buffer overflow attack
 This lab explores various encryption algorithm with openssl
-**Question 1**: Exploration of various encryption with openssl
+**Question 1**:
+- Compile both C programs and shellcode to executable code. 
+- Conduct the attack so that when C executable code runs, shellcode willc also be triggered. 
+  You are free to choose Code Injection or Environment Variable approach to do. 
+- Write step-by-step explanation and clearly comment on instructions and screenshots that you have made to successfully accomplished the attack.
 **Answer 1**:
-## 1. Create a text file named `plain.txt`:
-*First, we write a message and save it in a text file:*<br>
+## 1. Compile both C programs and shellcode to executable code. :
+Create vul.c and sh.c.
+Complie using command :
+gcc vul.c -o vul.out -fno-stack-protector -z execstack -mpreferred-stack-boundary=2
+gcc sh.c -o sh.out -fno-stack-protector -z execstack -mpreferred-stack-boundary=
 
-```sh
-echo "Sir, when will we meet again?...When the dandelions bloom, my dear." > plain.txt
-```
-Verify current folder for newly created file
+## 2.
 
 ## 2. Encrypt the file using AES-256 in ECB mode:
 
