@@ -17,4 +17,7 @@ gcc sh.c -o sh.out -fno-stack-protector -z execstack -mpreferred-stack-boundary=
 ## 2. Conducting attack
 Get 
 # Task 2: Attack on the database of bWapp 
+**Question 1**: Use sqlmap to get information about all available databases
+**Answer 1**:
+
   
